@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button'; 
+import { Button } from '@/components/ui/button';
 
 // URL da sua imagem de colagem
 const BACKGROUND_IMAGE_URL = '/wallpaper_pages/wallpaper_home.png'; // Altere este caminho conforme a localização do seu arquivo!
@@ -11,24 +11,24 @@ export function Banner_home() {
     return (
         // O elemento principal agora preencherá a largura total (w-full)
         <section className="relative w-full h-[500px] overflow-hidden">
-            
+
             {/* 1. Imagem Única de Fundo (Colagem) */}
-            <div 
+            <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ 
+                style={{
                     backgroundImage: `url(${BACKGROUND_IMAGE_URL})`,
                     // A imagem em si não precisa de desfoque
                 }}
             />
 
             {/* 2. Camada Escura de Sobreposição (Mantida para contraste) */}
-            <div className="absolute inset-0 bg-black/10" /> 
-            
+            <div className="absolute inset-0 bg-black/10" />
+
             {/* 3. Conteúdo Central DENTRO do Retângulo Desfocado */}
             <div className="relative z-10 flex items-center justify-center h-full w-full">
-                
+
                 {/* 🔑 NOVO: O Retângulo Translúcido e Desfocado */}
-                <div 
+                <div
                     className="
                         p-10 md:p-12 
                         bg-white/10 
@@ -49,8 +49,8 @@ export function Banner_home() {
                     </p>
 
                     <Link href="/nossa-causa" passHref>
-                        <Button 
-                            variant="default" 
+                        <Button
+                            variant="default"
                             className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-xl text-lg transition-colors"
                         >
                             Ver mais

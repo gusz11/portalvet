@@ -19,8 +19,8 @@ export default function AdminPage() {
 
                 <div className="grid md:grid-cols-2 gap-8">
                     {/* Animais Section */}
-                    <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-                        <CardHeader className="bg-[#67BED9]/10 rounded-t-xl">
+                    <Card className="border-none shadow-lg hover:shadow-xl transition-shadow overflow-hidden rounded-xl">
+                        <CardHeader className="bg-[#67BED9]/10 rounded-t-xl pt-8 pb-12 -mt-8 -mb-8 px-8">
                             <div className="flex items-center space-x-4 mb-2">
                                 <div className="bg-[#67BED9]/20 p-3 rounded-full text-[#67BED9]">
                                     <PawPrint size={24} />
@@ -48,8 +48,8 @@ export default function AdminPage() {
                     </Card>
 
                     {/* Eventos Section */}
-                    <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-                        <CardHeader className="bg-[#EC4899]/10 rounded-t-xl">
+                    <Card className="border-none shadow-lg hover:shadow-xl transition-shadow overflow-hidden rounded-xl">
+                        <CardHeader className="bg-[#EC4899]/10 rounded-t-xl pt-8 pb-12 -mt-8 -mb-8 px-8">
                             <div className="flex items-center space-x-4 mb-2">
                                 <div className="bg-[#EC4899]/20 p-3 rounded-full text-[#EC4899]">
                                     <CalendarDays size={32} />

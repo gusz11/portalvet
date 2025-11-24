@@ -6,7 +6,7 @@ import { MapPin, Clock, Phone, Navigation } from "lucide-react";
 
 export function LocationMap() {
     return (
-        <section className="py-16 bg-[#67BED9]/10">
+        <section id="location-map" className="py-16 bg-[#67BED9]/10">
             <div className="text-center mb-10">
                 <h2 className="text-4xl font-bold text-gray-800 mb-2">Onde nos encontrar</h2>
                 <p className="text-xl text-gray-600">Onde proporcionamos cuidado e esperança</p>

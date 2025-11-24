@@ -62,7 +62,7 @@ export default function BazarPage() {
                             </p>
                             <div className="space-y-2 text-gray-700 font-medium">
                                 <p>📍 Ponto de Coleta: Clínica Veterinária Portal Vet</p>
-                                <p>⏰ Horário: Seg a Sex, das 08h às 18h</p>
+                                <p>⏰ Horário: Seg a Sex, das 09h às 17h</p>
                             </div>
                         </div>
                     </div>

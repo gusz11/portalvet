@@ -118,10 +118,12 @@ export function AnimalModal({ animal, isOpen, onClose }: AnimalModalProps) {
                         </div>
 
                         <div className="mt-8 pt-6 border-t border-gray-100">
-                            <Button className="w-full bg-[#67BED9] hover:bg-[#5AADC7] text-white font-bold py-6 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all">
-                                <Heart className="mr-2 w-5 h-5" />
-                                Quero Adotar
-                            </Button>
+                            <a href="https://wa.me/5561982080204" target="_blank" rel="noopener noreferrer" className="w-full">
+                                <Button className="w-full bg-[#67BED9] hover:bg-[#5AADC7] text-white font-bold py-6 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all">
+                                    <Heart className="mr-2 w-5 h-5" />
+                                    Quero Adotar
+                                </Button>
+                            </a>
                         </div>
                     </div>
                 </div>

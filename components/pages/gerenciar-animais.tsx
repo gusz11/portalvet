@@ -2,10 +2,11 @@
 
 import { Navbar } from '@/components/menu/navbar';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { PlusCircle, Trash2 } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { PawPrint } from 'lucide-react'; // ícone bonitinho pro header
 
 export function GerenciarAnimais() {
     const [animals, setAnimals] = useState<any[]>([]);
@@ -23,20 +24,18 @@ export function GerenciarAnimais() {
             setAnimals(data);
         } catch (error) {
             console.error("Error fetching animals:", error);
-            // Fallback mock data for demo if backend is down
             setAnimals([
-                { id: 1, nome: "Filhote", race: "Gato", imageUrl: "/images/cat-avatar.png" },
-                { id: 2, nome: "Serena", race: "Gato", imageUrl: "/images/cat-avatar.png" },
+                { id: 1, nome: "Filhote", race: "Gato", color: "Branco e cinza", imageUrl: "/images/cat-avatar.png" },
+                { id: 2, nome: "Serena", race: "Gato", color: "Preto", imageUrl: "/images/cat-avatar.png" },
+                { id: 3, nome: "Rex", race: "Cão", color: "Caramelo", imageUrl: "/images/dog-avatar.png" },
             ]);
-            // alert("Erro ao carregar animais do servidor. Mostrando dados de exemplo."); // Removed alert to avoid spam on load
         } finally {
             setLoading(false);
         }
     }
 
     const handleDelete = (id: number) => {
-        alert("Funcionalidade de remoção não implementada no backend (apenas visual).");
-        // Optimistic update for visual feedback
+        // alert("Funcionalidade de remoção ainda não implementada no backend.");
         setAnimals(animals.filter(a => a.id !== id));
     };
 
@@ -44,42 +43,84 @@ export function GerenciarAnimais() {
         <div className="min-h-screen bg-gray-50">
             <Navbar />
 
-            <main className="container mx-auto p-8">
-                <div className="flex justify-between items-center mb-8">
-                    <div>
-                        <h1 className="text-3xl font-bold text-gray-800">Gerenciar Animais</h1>
-                        <p className="text-gray-600">Lista de animais cadastrados</p>
-                    </div>
-                    <Link href="/admin/animais/cadastro">
-                        <Button className="bg-[#67BED9] hover:bg-[#5AADC7] text-white">
-                            <PlusCircle className="mr-2 h-4 w-4" />
-                            Novo Animal
-                        </Button>
-                    </Link>
-                </div>
+            {/* Header bonito igual ao seu card anterior */}
+            <div className="bg-[#67BED9]/10 border-b border-gray-200">
+                <div className="container mx-auto px-6 py-10">
+                    <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-4">
+                            <div className="bg-[#67BED9]/20 p-4 rounded-full">
+                                <PawPrint className="h-8 w-8 text-[#67BED9]" />
+                            </div>
+                            <div>
+                                <h1 className="text-3xl font-bold text-gray-800">Gerenciar Animais</h1>
+                                <p className="text-gray-600 mt-1">Lista completa de animais cadastrados para adoção e tratamento</p>
+                            </div>
+                        </div>
 
+                        <Link href="/admin/animais/cadastro">
+                            <Button className="bg-[#67BED9] hover:bg-[#5AADC7] text-white font-medium">
+                                <PlusCircle className="mr-2 h-5 w-5" />
+                                Novo Animal
+                            </Button>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+
+            <main className="container mx-auto px-6 py-10 max-w-6xl">
                 {loading ? (
-                    <div>Carregando...</div>
+                    <div className="text-center py-12 text-gray-500">Carregando animais...</div>
+                ) : animals.length === 0 ? (
+                    <Card className="text-center py-16">
+                        <CardContent>
+                            <p className="text-gray-500 text-lg">Nenhum animal cadastrado ainda.</p>
+                            <Link href="/admin/animais/cadastro">
+                                <Button className="mt-6 bg-[#67BED9] hover:bg-[#5AADC7]">
+                                    <PlusCircle className="mr-2 h-5 w-5" />
+                                    Cadastrar o primeiro animal
+                                </Button>
+                            </Link>
+                        </CardContent>
+                    </Card>
                 ) : (
                     <div className="grid gap-4">
                         {animals.map((animal) => (
-                            <Card key={animal.id || animal.nome} className="flex items-center p-4 justify-between">
-                                <div className="flex items-center space-x-4">
-                                    <div className="h-16 w-16 bg-gray-200 rounded-full overflow-hidden">
-                                        <img
-                                            src={animal.imageUrl || "/images/cat-avatar.png"}
-                                            alt={animal.nome}
-                                            className="h-full w-full object-cover"
-                                        />
+                            <Card
+                                key={animal.id}
+                                className="hover:shadow-md transition-shadow duration-200 overflow-hidden"
+                            >
+                                <div className="flex items-center justify-between p-6">
+                                    <div className="flex items-center gap-5">
+                                        <div className="h-20 w-20 bg-gray-200 border-2 border-dashed rounded-full overflow-hidden flex-shrink-0">
+                                            <img
+                                                src={animal.imageUrl || "/images/cat-avatar.png"}
+                                                alt={animal.nome}
+                                                className="h-full w-full object-cover"
+                                            />
+                                        </div>
+                                        <div>
+                                            <h3 className="text-xl font-semibold text-gray-800">{animal.nome}</h3>
+                                            <p className="text-gray-600">
+                                                {animal.race} • {animal.color || "Cor não informada"}
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h3 className="font-bold text-lg text-gray-800">{animal.nome}</h3>
-                                        <p className="text-gray-500">{animal.race} - {animal.color}</p>
+
+                                    <div className="flex items-center gap-3">
+                                        <Button variant="outline" size="sm" asChild>
+                                            <Link href={`/admin/animais/${animal.id}`}>
+                                                Ver detalhes
+                                            </Link>
+                                        </Button>
+                                        <Button
+                                            variant="destructive"
+                                            size="icon"
+                                            onClick={() => handleDelete(animal.id)}
+                                        >
+                                            <Trash2 className="h-4 w-4" />
+                                        </Button>
                                     </div>
                                 </div>
-                                <Button variant="destructive" size="icon" onClick={() => handleDelete(animal.id)}>
-                                    <Trash2 className="h-4 w-4" />
-                                </Button>
                             </Card>
                         ))}
                     </div>

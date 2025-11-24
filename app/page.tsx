@@ -11,26 +11,16 @@ import { EventsList } from '@/components/static_fields/events-list';
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gray-50">
-
-
       <Navbar />
 
-      <main className="container mx-auto p-8 space-y-16">
+      <main className="flex flex-col">
         <CarouselDemo />
-
-
         <Banner_home />
-
         <AdoptionAnimals />
-
         <LocationMap />
-
         <MissionBanner />
-
         <EventsList />
       </main>
-
-
     </div>
   );
 }

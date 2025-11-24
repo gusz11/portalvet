@@ -17,10 +17,10 @@ import {
 
 
 const servicos = [
-    { title: "CIRURGIA", imageUrl: "/carrousel/surgery_item.png", route: "/servicos/cirurgia" },
-    { title: "CONSULTAS", imageUrl: "/carrousel/schedule_item.jpg", route: "/servicos/consultas" },
-    { title: "VACINAS", imageUrl: "/carrousel/injection_item.jpg", route: "/servicos/vacinas" },
-    { title: "EXAMES", imageUrl: "/carrousel/exam_item.jpg", route: "/servicos/exames" },
+    { title: "CIRURGIA", imageUrl: "/carrousel/surgery_item.png", route: "/servicos" },
+    { title: "CONSULTAS", imageUrl: "/carrousel/schedule_item.jpg", route: "/servicos" },
+    { title: "VACINAS", imageUrl: "/carrousel/injection_item.jpg", route: "/servicos" },
+    { title: "EXAMES", imageUrl: "/carrousel/exam_item.jpg", route: "/servicos" },
 ];
 
 export function CarouselDemo() {
@@ -43,13 +43,13 @@ export function CarouselDemo() {
                     align: "start",
                     loop: true,
                 }}
-                className="w-full max-w-2xl mx-auto"
+                className="w-full max-w-5xl mx-auto px-12"
             >
                 <CarouselContent className="">
                     {Array.from({ length: servicos.length }).map((_, index) => (
                         <CarouselItem
                             key={index}
-                            className="basis-full"
+                            className="md:basis-1/2 lg:basis-1/3"
                         >
                             <div className="p-1">
                                 <Link href={servicos[index].route}>
@@ -65,7 +65,7 @@ export function CarouselDemo() {
                                         <CardContent className="flex items-center justify-center p-6 h-full relative">
                                             <span
                                                 className="
-                                                    text-6xl 
+                                                    text-4xl 
                                                     text-white 
                                                     font-extrabold 
                                                     tracking-wider 
@@ -74,6 +74,7 @@ export function CarouselDemo() {
                                                     drop-shadow-lg
                                                     hover:scale-110
                                                     transition-transform
+                                                    text-center
                                                 "
                                             >
                                                 {servicos[index].title}
@@ -86,8 +87,8 @@ export function CarouselDemo() {
                     ))}
                 </CarouselContent>
 
-                <CarouselPrevious className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 text-gray-800 bg-white/70 hover:bg-white border-none" />
-                <CarouselNext className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 text-gray-800 bg-white/70 hover:bg-white border-none" />
+                <CarouselPrevious className="absolute -left-4 top-1/2 transform -translate-y-1/2 z-10 text-gray-800 bg-white hover:bg-gray-100 border-none w-12 h-12 shadow-lg" />
+                <CarouselNext className="absolute -right-4 top-1/2 transform -translate-y-1/2 z-10 text-gray-800 bg-white hover:bg-gray-100 border-none w-12 h-12 shadow-lg" />
             </Carousel>
         </section>
     )

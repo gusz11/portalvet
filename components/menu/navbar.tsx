@@ -10,11 +10,11 @@ import Link from 'next/link';
 const navItems = [
   { href: '/', label: 'Página Inicial', active: true },
   { href: '/servicos', label: 'Serviços' },
-  { href: '/nosso-curso', label: 'Nosso Curso' },
+  { href: '/nossa-causa', label: 'Nossa Causa' },
   { href: '/adote', label: 'Adote' },
-  { href: '/onde-encontrar', label: 'Onde Encontrar' },
+  { href: '/#location-map', label: 'Onde Encontrar' },
   { href: '/contribuir', label: 'Contribuir' },
-  { href: '/eventos', label: 'Eventos' },
+  { href: '/#events-list', label: 'Eventos' },
 ];
 
 export function Navbar() {
