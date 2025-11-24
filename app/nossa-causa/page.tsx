@@ -40,9 +40,9 @@ export default function NossaCausaPage() {
                             <h3 className="text-2xl font-bold text-[#67BED9] mb-4">Como você pode ajudar?</h3>
                             <ul className="list-disc list-inside space-y-2 text-gray-700">
                                 <li>Adotando um de nossos animais resgatados</li>
+                                <li>Sendo um voluntário para lar temporário</li>
                                 <li>Participando de nossos eventos e bazares</li>
                                 <li>Divulgando nossa causa nas redes sociais</li>
-                                <li>Sendo um voluntário em nossas ações</li>
                             </ul>
                         </div>
 

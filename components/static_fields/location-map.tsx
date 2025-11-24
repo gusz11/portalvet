@@ -62,7 +62,7 @@ export function LocationMap() {
                                 </div>
                                 <div>
                                     <p className="font-semibold text-gray-700">Contato</p>
-                                    <p className="text-gray-600">(61) 982080204</p>
+                                    <p className="text-gray-600">(61) 98208-0204</p>
                                 </div>
                             </div>
                         </div>
