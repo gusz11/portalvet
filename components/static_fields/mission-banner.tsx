@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function MissionBanner() {
     return (
-        <section className="py-16 bg-pink-50 relative overflow-hidden">
+        <section className="py-16 bg-[#EC4899]/10 relative overflow-hidden">
             {/* Decorative Hearts Background Pattern - CSS only implementation for simplicity */}
             <div className="absolute inset-0 opacity-20 pointer-events-none">
                 <div className="absolute top-4 left-10 text-blue-400 text-4xl">♥</div>

@@ -78,7 +78,7 @@ export default function NovoEventoPage() {
                                 />
                             </div>
 
-                            <Button type="submit" className="w-full mt-6 bg-pink-500 hover:bg-pink-600 text-white" disabled={loading}>
+                            <Button type="submit" className="w-full mt-6 bg-[#EC4899] hover:bg-[#DB2777] text-white" disabled={loading}>
                                 {loading ? 'Salvando...' : 'Criar Evento'}
                             </Button>
                         </form>

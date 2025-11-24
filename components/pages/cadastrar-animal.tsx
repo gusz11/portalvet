@@ -110,7 +110,7 @@ export function CadastrarAnimal() {
                                         name="sick"
                                         checked={formData.sick}
                                         onChange={handleChange}
-                                        className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                        className="h-4 w-4 rounded border-gray-300 text-[#67BED9] focus:ring-[#67BED9]"
                                     />
                                     <Label htmlFor="sick">Doente?</Label>
                                 </div>
@@ -121,13 +121,13 @@ export function CadastrarAnimal() {
                                         name="hurted"
                                         checked={formData.hurted}
                                         onChange={handleChange}
-                                        className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                        className="h-4 w-4 rounded border-gray-300 text-[#67BED9] focus:ring-[#67BED9]"
                                     />
                                     <Label htmlFor="hurted">Machucado?</Label>
                                 </div>
                             </div>
 
-                            <Button type="submit" className="w-full mt-6 bg-blue-500 hover:bg-blue-600 text-white" disabled={loading}>
+                            <Button type="submit" className="w-full mt-6 bg-[#67BED9] hover:bg-[#5AADC7] text-white" disabled={loading}>
                                 {loading ? 'Salvando...' : 'Cadastrar Animal'}
                             </Button>
                         </form>

@@ -21,7 +21,7 @@ export function Navbar() {
   const currentPath = '/';
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-blue-400/90 backdrop-blur-sm border-b border-blue-500 shadow-md">
+    <header className="sticky top-0 z-50 w-full bg-[#67BED9]/90 backdrop-blur-sm border-b border-[#5AADC7] shadow-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center space-x-4">
 
@@ -67,7 +67,7 @@ export function Navbar() {
           <Link href="/admin">
             <Avatar className="h-9 w-9 border-2 border-white cursor-pointer hover:opacity-80 transition-opacity">
               <AvatarImage src="/images/cat-avatar.png" alt="User Avatar" />
-              <AvatarFallback className="bg-white text-blue-400 font-semibold">PV</AvatarFallback>
+              <AvatarFallback className="bg-white text-[#67BED9] font-semibold">PV</AvatarFallback>
             </Avatar>
           </Link>
         </div>

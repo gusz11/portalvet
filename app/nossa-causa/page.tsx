@@ -36,9 +36,9 @@ export default function NossaCausaPage() {
                             </p>
                         </div>
 
-                        <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100">
-                            <h3 className="text-2xl font-bold text-blue-800 mb-4">Como você pode ajudar?</h3>
-                            <ul className="list-disc list-inside space-y-2 text-blue-900/80">
+                        <div className="bg-[#67BED9]/10 p-8 rounded-2xl border border-[#67BED9]/20">
+                            <h3 className="text-2xl font-bold text-[#67BED9] mb-4">Como você pode ajudar?</h3>
+                            <ul className="list-disc list-inside space-y-2 text-gray-700">
                                 <li>Adotando um de nossos animais resgatados</li>
                                 <li>Participando de nossos eventos e bazares</li>
                                 <li>Divulgando nossa causa nas redes sociais</li>
@@ -48,7 +48,7 @@ export default function NossaCausaPage() {
 
                         <div className="text-center pt-8">
                             <Link href="/adote">
-                                <Button className="bg-blue-500 hover:bg-blue-600 text-white text-xl px-10 py-6 rounded-xl shadow-lg transition-transform hover:scale-105">
+                                <Button className="bg-[#67BED9] hover:bg-[#5AADC7] text-white text-xl px-10 py-6 rounded-xl shadow-lg transition-transform hover:scale-105">
                                     Quero Adotar
                                 </Button>
                             </Link>

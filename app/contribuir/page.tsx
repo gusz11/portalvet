@@ -10,7 +10,7 @@ export default function ContribuirPage() {
 
             <main className="container mx-auto p-8">
                 <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
-                    <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-12 text-center text-white">
+                    <div className="bg-gradient-to-r from-[#67BED9] to-purple-600 p-12 text-center text-white">
                         <HeartHandshake className="w-20 h-20 mx-auto mb-6 opacity-90" />
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">Colabore com nossa Missão</h1>
                         <p className="text-xl opacity-90">Juntos podemos transformar vidas.</p>
@@ -21,7 +21,7 @@ export default function ContribuirPage() {
                         {/* Adoption Requirements Section */}
                         <div className="space-y-6">
                             <h2 className="text-3xl font-bold text-gray-800 flex items-center gap-3">
-                                <Home className="text-blue-500" />
+                                <Home className="text-[#67BED9]" />
                                 Requisitos para Adoção
                             </h2>
                             <p className="text-lg">
@@ -51,24 +51,24 @@ export default function ContribuirPage() {
                         <div className="space-y-6">
                             <h2 className="text-3xl font-bold text-gray-800">Outras formas de ajudar</h2>
                             <div className="grid md:grid-cols-3 gap-6">
-                                <div className="bg-blue-50 p-6 rounded-2xl text-center">
-                                    <h3 className="font-bold text-blue-800 text-xl mb-2">Seja Voluntário</h3>
-                                    <p className="text-blue-900/70 mb-4">Doe seu tempo e carinho para cuidar dos animais na clínica ou em eventos.</p>
+                                <div className="bg-[#67BED9]/10 p-6 rounded-2xl text-center">
+                                    <h3 className="font-bold text-[#67BED9] text-xl mb-2">Seja Voluntário</h3>
+                                    <p className="text-gray-700 mb-4">Doe seu tempo e carinho para cuidar dos animais na clínica ou em eventos.</p>
                                 </div>
                                 <div className="bg-purple-50 p-6 rounded-2xl text-center">
                                     <h3 className="font-bold text-purple-800 text-xl mb-2">Doe Ração</h3>
                                     <p className="text-purple-900/70 mb-4">Recebemos doações de ração, medicamentos e produtos de limpeza.</p>
                                 </div>
-                                <div className="bg-pink-50 p-6 rounded-2xl text-center">
-                                    <h3 className="font-bold text-pink-800 text-xl mb-2">Apadrinhe</h3>
-                                    <p className="text-pink-900/70 mb-4">Ajude a custear o tratamento de um animal específico até que ele seja adotado.</p>
+                                <div className="bg-[#EC4899]/10 p-6 rounded-2xl text-center">
+                                    <h3 className="font-bold text-[#EC4899] text-xl mb-2">Apadrinhe</h3>
+                                    <p className="text-gray-700 mb-4">Ajude a custear o tratamento de um animal específico até que ele seja adotado.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="text-center pt-8">
                             <Link href="/adote">
-                                <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white text-xl px-10 py-6 rounded-xl shadow-lg transition-transform hover:scale-105">
+                                <Button className="bg-gradient-to-r from-[#67BED9] to-purple-600 hover:from-[#5AADC7] hover:to-purple-700 text-white text-xl px-10 py-6 rounded-xl shadow-lg transition-transform hover:scale-105">
                                     Ver Animais para Adoção
                                 </Button>
                             </Link>

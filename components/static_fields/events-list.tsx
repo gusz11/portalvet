@@ -61,7 +61,7 @@ export function EventsList() {
                             </div>
                             <CardFooter className="p-4 bg-white">
                                 <Link href={event.link} className="w-full">
-                                    <Button className="w-full bg-blue-400 hover:bg-blue-500 text-white font-semibold rounded-lg">
+                                    <Button className="w-full bg-[#67BED9] hover:bg-[#5AADC7] text-white font-semibold rounded-lg">
                                         Saiba mais
                                     </Button>
                                 </Link>

@@ -51,7 +51,7 @@ export function GerenciarAnimais() {
                         <p className="text-gray-600">Lista de animais cadastrados</p>
                     </div>
                     <Link href="/admin/animais/cadastro">
-                        <Button className="bg-blue-500 hover:bg-blue-600 text-white">
+                        <Button className="bg-[#67BED9] hover:bg-[#5AADC7] text-white">
                             <PlusCircle className="mr-2 h-4 w-4" />
                             Novo Animal
                         </Button>

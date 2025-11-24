@@ -20,10 +20,10 @@ export default function AdminPage() {
                 <div className="grid md:grid-cols-2 gap-8">
                     {/* Animais Section */}
                     <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-                        <CardHeader className="bg-blue-50 rounded-t-xl pb-8">
+                        <CardHeader className="bg-[#67BED9]/10 rounded-t-xl">
                             <div className="flex items-center space-x-4 mb-2">
-                                <div className="bg-blue-100 p-3 rounded-full text-blue-600">
-                                    <PawPrint size={32} />
+                                <div className="bg-[#67BED9]/20 p-3 rounded-full text-[#67BED9]">
+                                    <PawPrint size={24} />
                                 </div>
                                 <CardTitle className="text-2xl text-gray-800">Animais</CardTitle>
                             </div>
@@ -33,13 +33,13 @@ export default function AdminPage() {
                         </CardHeader>
                         <CardContent className="p-8 space-y-4">
                             <Link href="/admin/animais" className="block">
-                                <Button variant="outline" className="w-full justify-start h-14 text-lg border-gray-200 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200">
+                                <Button variant="outline" className="w-full justify-start h-14 text-lg border-gray-200 hover:bg-[#67BED9]/10 hover:text-[#67BED9] hover:border-[#67BED9]">
                                     <List className="mr-3" />
                                     Ver Lista de Animais
                                 </Button>
                             </Link>
                             <Link href="/admin/animais/cadastro" className="block">
-                                <Button className="w-full justify-start h-14 text-lg bg-blue-500 hover:bg-blue-600 text-white">
+                                <Button className="w-full justify-start h-14 text-lg bg-[#67BED9] hover:bg-[#5AADC7] text-white">
                                     <PlusCircle className="mr-3" />
                                     Cadastrar Novo Animal
                                 </Button>
@@ -49,9 +49,9 @@ export default function AdminPage() {
 
                     {/* Eventos Section */}
                     <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
-                        <CardHeader className="bg-pink-50 rounded-t-xl pb-8">
+                        <CardHeader className="bg-[#EC4899]/10 rounded-t-xl">
                             <div className="flex items-center space-x-4 mb-2">
-                                <div className="bg-pink-100 p-3 rounded-full text-pink-600">
+                                <div className="bg-[#EC4899]/20 p-3 rounded-full text-[#EC4899]">
                                     <CalendarDays size={32} />
                                 </div>
                                 <CardTitle className="text-2xl text-gray-800">Eventos</CardTitle>
@@ -63,7 +63,7 @@ export default function AdminPage() {
                         <CardContent className="p-8 space-y-4">
                             {/* No list view for events yet as per plan, just create */}
                             <Link href="/admin/eventos/cadastro" className="block">
-                                <Button className="w-full justify-start h-14 text-lg bg-pink-500 hover:bg-pink-600 text-white">
+                                <Button className="w-full justify-start h-14 text-lg bg-[#EC4899] hover:bg-[#DB2777] text-white">
                                     <PlusCircle className="mr-3" />
                                     Criar Novo Evento
                                 </Button>

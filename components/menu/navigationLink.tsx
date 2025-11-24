@@ -13,8 +13,8 @@ export function NavigationLink({ href, children, active = false }: NavigationLin
     <Link
       href={href}
       className={cn(
-        'transition-colors hover:text-foreground/100 text-sm font-medium',
-        active ? 'text-foreground border-b-2 border-foreground/100' : 'text-foreground/60'
+        'transition-colors hover:text-white text-sm font-medium',
+        active ? 'text-white border-b-2 border-white' : 'text-white/80'
       )}
     >
       {children}

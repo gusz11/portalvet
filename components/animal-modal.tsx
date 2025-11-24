@@ -71,7 +71,7 @@ export function AnimalModal({ animal, isOpen, onClose }: AnimalModalProps) {
                     <div className="w-full md:w-1/2 p-8 flex flex-col">
                         <div className="mb-6">
                             <h2 className="text-3xl font-bold text-gray-800 mb-2">{animal.nome}</h2>
-                            <p className="text-xl text-blue-500 font-medium">{animal.race || "Raça indefinida"}</p>
+                            <p className="text-xl text-[#67BED9] font-medium">{animal.race || "Raça indefinida"}</p>
                         </div>
 
                         <div className="space-y-4 flex-grow">
@@ -118,7 +118,7 @@ export function AnimalModal({ animal, isOpen, onClose }: AnimalModalProps) {
                         </div>
 
                         <div className="mt-8 pt-6 border-t border-gray-100">
-                            <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-6 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all">
+                            <Button className="w-full bg-[#67BED9] hover:bg-[#5AADC7] text-white font-bold py-6 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all">
                                 <Heart className="mr-2 w-5 h-5" />
                                 Quero Adotar
                             </Button>

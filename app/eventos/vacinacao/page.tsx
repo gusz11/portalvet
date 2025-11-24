@@ -9,7 +9,7 @@ export default function VacinacaoPage() {
 
             <main className="container mx-auto p-8">
                 <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
-                    <div className="bg-blue-500 p-12 text-center text-white">
+                    <div className="bg-[#67BED9] p-12 text-center text-white">
                         <Syringe className="w-20 h-20 mx-auto mb-6 opacity-90" />
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">Vacinação Gratuita</h1>
                         <p className="text-xl opacity-90">Protegendo quem você ama, sem custo algum.</p>
@@ -18,7 +18,7 @@ export default function VacinacaoPage() {
                     <div className="p-8 md:p-12 space-y-8 text-gray-700 leading-relaxed">
                         <div className="space-y-4">
                             <h2 className="text-3xl font-bold text-gray-800 flex items-center gap-3">
-                                <ShieldCheck className="text-blue-500" />
+                                <ShieldCheck className="text-[#67BED9]" />
                                 Por que vacinar?
                             </h2>
                             <p className="text-lg">
@@ -27,17 +27,17 @@ export default function VacinacaoPage() {
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-blue-50 p-6 rounded-2xl">
-                                <h3 className="text-xl font-bold text-blue-800 mb-3">Vacinas Disponíveis (Cães)</h3>
-                                <ul className="list-disc list-inside space-y-2 text-blue-900/80">
+                            <div className="bg-[#67BED9]/10 p-6 rounded-2xl">
+                                <h3 className="text-xl font-bold text-[#67BED9] mb-3">Vacinas Disponíveis (Cães)</h3>
+                                <ul className="list-disc list-inside space-y-2 text-gray-700">
                                     <li>V10 (Múltipla)</li>
                                     <li>Antirrábica</li>
                                     <li>Gripe Canina</li>
                                 </ul>
                             </div>
-                            <div className="bg-pink-50 p-6 rounded-2xl">
-                                <h3 className="text-xl font-bold text-pink-800 mb-3">Vacinas Disponíveis (Gatos)</h3>
-                                <ul className="list-disc list-inside space-y-2 text-pink-900/80">
+                            <div className="bg-[#EC4899]/10 p-6 rounded-2xl">
+                                <h3 className="text-xl font-bold text-[#EC4899] mb-3">Vacinas Disponíveis (Gatos)</h3>
+                                <ul className="list-disc list-inside space-y-2 text-gray-700">
                                     <li>V4 (Múltipla)</li>
                                     <li>Antirrábica</li>
                                     <li>Leucemia Felina (FeLV)</li>

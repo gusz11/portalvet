@@ -6,11 +6,11 @@ import { MapPin, Clock, Phone, Navigation } from "lucide-react";
 
 export function LocationMap() {
     return (
-        <section className="py-16 bg-blue-50/30">
+        <section className="py-16 bg-[#67BED9]/10">
             <div className="text-center mb-10">
                 <h2 className="text-4xl font-bold text-gray-800 mb-2">Onde nos encontrar</h2>
                 <p className="text-xl text-gray-600">Onde proporcionamos cuidado e esperança</p>
-                <a href="#" className="text-blue-500 hover:underline mt-2 inline-block">Clínica Veterinária Portal Vet</a>
+                <a href="#" className="text-[#67BED9] hover:underline mt-2 inline-block">Clínica Veterinária Portal Vet</a>
             </div>
 
             <div className="container mx-auto px-4 max-w-5xl">
@@ -35,34 +35,34 @@ export function LocationMap() {
 
                         <div className="space-y-6">
                             <div className="flex items-start space-x-4">
-                                <div className="bg-blue-100 p-2 rounded-full text-blue-500 mt-1">
+                                <div className="bg-[#67BED9]/20 p-2 rounded-full text-[#67BED9] mt-1">
                                     <MapPin className="w-5 h-5" />
                                 </div>
                                 <div>
                                     <p className="font-semibold text-gray-700">Endereço</p>
-                                    <p className="text-gray-600">Av. Ceará, 1240</p>
-                                    <p className="text-gray-600">Bairro Bosque, Rio Branco - AC</p>
+                                    <p className="text-gray-600">Av. Central, 1345</p>
+                                    <p className="text-gray-600">Núcleo Bandeirante, Brasilia - DF</p>
                                 </div>
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="bg-blue-100 p-2 rounded-full text-blue-500 mt-1">
+                                <div className="bg-[#67BED9]/20 p-2 rounded-full text-[#67BED9] mt-1">
                                     <Clock className="w-5 h-5" />
                                 </div>
                                 <div>
                                     <p className="font-semibold text-gray-700">Horário</p>
-                                    <p className="text-gray-600">Seg - Sex: 08h - 18h</p>
-                                    <p className="text-gray-600">Sáb - Feriados: 08h - 12h</p>
+                                    <p className="text-gray-600">Seg - Sex: 09h - 17h</p>
+                                    <p className="text-gray-600">Sáb: 09h - 13h</p>
                                 </div>
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="bg-blue-100 p-2 rounded-full text-blue-500 mt-1">
+                                <div className="bg-[#67BED9]/20 p-2 rounded-full text-[#67BED9] mt-1">
                                     <Phone className="w-5 h-5" />
                                 </div>
                                 <div>
                                     <p className="font-semibold text-gray-700">Contato</p>
-                                    <p className="text-gray-600">(68) 9999-9999</p>
+                                    <p className="text-gray-600">(61) 982080204</p>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ export function LocationMap() {
                             rel="noopener noreferrer"
                             className="w-full"
                         >
-                            <Button className="mt-8 w-full bg-blue-400 hover:bg-blue-500 text-white font-bold py-6 rounded-xl shadow-lg transition-all hover:scale-[1.02]">
+                            <Button className="mt-8 w-full bg-[#67BED9] hover:bg-[#5AADC7] text-white font-bold py-6 rounded-xl shadow-lg transition-all hover:scale-[1.02]">
                                 <Navigation className="mr-2 h-5 w-5" />
                                 Como Chegar
                             </Button>

@@ -10,7 +10,7 @@ export default function CastracaoPage() {
 
             <main className="container mx-auto p-8">
                 <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
-                    <div className="bg-pink-500 p-12 text-center text-white">
+                    <div className="bg-[#EC4899] p-12 text-center text-white">
                         <Scissors className="w-20 h-20 mx-auto mb-6 opacity-90" />
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">Castração Gratuita</h1>
                         <p className="text-xl opacity-90">Um ato de amor e responsabilidade.</p>
@@ -19,7 +19,7 @@ export default function CastracaoPage() {
                     <div className="p-8 md:p-12 space-y-8 text-gray-700 leading-relaxed">
                         <div className="space-y-4">
                             <h2 className="text-3xl font-bold text-gray-800 flex items-center gap-3">
-                                <Heart className="text-pink-500" />
+                                <Heart className="text-[#EC4899]" />
                                 Benefícios da Castração
                             </h2>
                             <p className="text-lg">
@@ -47,7 +47,7 @@ export default function CastracaoPage() {
                                 Tem interesse? Entre em contato para verificar a disponibilidade de vagas.
                             </p>
                             <Link href="/onde-encontrar">
-                                <Button className="bg-pink-500 hover:bg-pink-600 text-white text-xl px-10 py-6 rounded-xl shadow-lg transition-transform hover:scale-105">
+                                <Button className="bg-[#EC4899] hover:bg-[#DB2777] text-white text-xl px-10 py-6 rounded-xl shadow-lg transition-transform hover:scale-105">
                                     Entrar em Contato
                                 </Button>
                             </Link>

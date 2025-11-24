@@ -75,7 +75,7 @@ export default function AdotePage() {
                                 <CardContent className="p-6 text-center">
                                     <h3 className="text-2xl font-bold text-gray-800 mb-1">{animal.nome}</h3>
                                     <p className="text-gray-500 mb-4">{animal.race || "Sem raça definida"}</p>
-                                    <Button className="w-full bg-blue-400 hover:bg-blue-500 text-white font-bold rounded-xl py-6">
+                                    <Button className="w-full bg-[#67BED9] hover:bg-[#5AADC7] text-white font-bold rounded-xl py-6">
                                         Quero Adotar
                                     </Button>
                                 </CardContent>
